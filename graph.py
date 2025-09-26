@@ -79,4 +79,8 @@ plot.ylim(0, 25000)
 plot.grid(True)
 plot.legend(bbox_to_anchor=(1.05, 0.5), loc="center left", borderaxespad=0., fancybox=True, shadow=True)
 plot.subplots_adjust(right=0.55)
+if IS_LABELED != False:
+	plot.savefig('galaxies_unlabeled.png', bbox_inches='tight')
+else:
+	plot.savefig('galaxies_labeled.png', bbox_inches='tight')
 plot.show()
